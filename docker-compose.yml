@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  smartchargingapi:
+    image: ${DOCKER_REGISTRY-}smartchargingapi
+    build:
+      context: .
+      dockerfile: src/Endpoints/SmartCharging.Endpoints.WebApi/Dockerfile
+    ports:
+      - "8090:80"

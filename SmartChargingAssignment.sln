@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{877F93B4-3778-495B-AE68-48F632093EE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6E549DEA-4AE6-42E2-BBD5-2E2993875E30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoints", "Endpoints", "{E290CCEE-026F-4393-BC4D-00DE05458640}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructures", "Infrastructures", "{31587401-DE17-4FEB-A797-948D3D6DE118}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Core.Domain", "src\Core\SmartCharging.Core.Domain\SmartCharging.Core.Domain.csproj", "{38CA3C08-CA1A-4F81-A2B3-43195F5B4A0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Core.ApplicationService", "src\Core\SmartCharging.Core.ApplicationService\SmartCharging.Core.ApplicationService.csproj", "{B9FE75C6-3BEF-4930-BE4D-EBBAF1FCBA79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Endpoints.WebApi", "src\Endpoints\SmartCharging.Endpoints.WebApi\SmartCharging.Endpoints.WebApi.csproj", "{099FF119-5964-4EC3-90F4-5E67E9DCCBE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Infrastructures.Data", "src\Infrastructures\SmartCharging.Infrastructures.Data\SmartCharging.Infrastructures.Data.csproj", "{810BA3DF-D560-40AD-A40C-3007EB157383}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B034F436-A27E-4E76-91B8-40A6761FBA91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.SmartCharging.Domain", "test\Test.SmartCharging.Domain\Test.SmartCharging.Domain.csproj", "{FA8B9B6E-C5C0-4C3A-9AF1-B19D0D61B0B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.SmartCharging.Infrastructure", "test\Test.SmartCharging.Infrastructure\Test.SmartCharging.Infrastructure.csproj", "{0C244B18-CF6A-43E1-A98A-8A66609CF904}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.SmartCharging.WebApi", "test\Test.SmartCharging.WebApi\Test.SmartCharging.WebApi.csproj", "{4F7E9A7F-A77E-41CD-9F5C-5BA65853D75E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F9954101-B194-4563-933C-1151584ACEAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38CA3C08-CA1A-4F81-A2B3-43195F5B4A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CA3C08-CA1A-4F81-A2B3-43195F5B4A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CA3C08-CA1A-4F81-A2B3-43195F5B4A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CA3C08-CA1A-4F81-A2B3-43195F5B4A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FE75C6-3BEF-4930-BE4D-EBBAF1FCBA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FE75C6-3BEF-4930-BE4D-EBBAF1FCBA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FE75C6-3BEF-4930-BE4D-EBBAF1FCBA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FE75C6-3BEF-4930-BE4D-EBBAF1FCBA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099FF119-5964-4EC3-90F4-5E67E9DCCBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099FF119-5964-4EC3-90F4-5E67E9DCCBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099FF119-5964-4EC3-90F4-5E67E9DCCBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099FF119-5964-4EC3-90F4-5E67E9DCCBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810BA3DF-D560-40AD-A40C-3007EB157383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810BA3DF-D560-40AD-A40C-3007EB157383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810BA3DF-D560-40AD-A40C-3007EB157383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810BA3DF-D560-40AD-A40C-3007EB157383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8B9B6E-C5C0-4C3A-9AF1-B19D0D61B0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8B9B6E-C5C0-4C3A-9AF1-B19D0D61B0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8B9B6E-C5C0-4C3A-9AF1-B19D0D61B0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8B9B6E-C5C0-4C3A-9AF1-B19D0D61B0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C244B18-CF6A-43E1-A98A-8A66609CF904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C244B18-CF6A-43E1-A98A-8A66609CF904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C244B18-CF6A-43E1-A98A-8A66609CF904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C244B18-CF6A-43E1-A98A-8A66609CF904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7E9A7F-A77E-41CD-9F5C-5BA65853D75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7E9A7F-A77E-41CD-9F5C-5BA65853D75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7E9A7F-A77E-41CD-9F5C-5BA65853D75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7E9A7F-A77E-41CD-9F5C-5BA65853D75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9954101-B194-4563-933C-1151584ACEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9954101-B194-4563-933C-1151584ACEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9954101-B194-4563-933C-1151584ACEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9954101-B194-4563-933C-1151584ACEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E549DEA-4AE6-42E2-BBD5-2E2993875E30} = {877F93B4-3778-495B-AE68-48F632093EE8}
+		{E290CCEE-026F-4393-BC4D-00DE05458640} = {877F93B4-3778-495B-AE68-48F632093EE8}
+		{31587401-DE17-4FEB-A797-948D3D6DE118} = {877F93B4-3778-495B-AE68-48F632093EE8}
+		{38CA3C08-CA1A-4F81-A2B3-43195F5B4A0A} = {6E549DEA-4AE6-42E2-BBD5-2E2993875E30}
+		{B9FE75C6-3BEF-4930-BE4D-EBBAF1FCBA79} = {6E549DEA-4AE6-42E2-BBD5-2E2993875E30}
+		{099FF119-5964-4EC3-90F4-5E67E9DCCBE3} = {E290CCEE-026F-4393-BC4D-00DE05458640}
+		{810BA3DF-D560-40AD-A40C-3007EB157383} = {31587401-DE17-4FEB-A797-948D3D6DE118}
+		{FA8B9B6E-C5C0-4C3A-9AF1-B19D0D61B0B9} = {B034F436-A27E-4E76-91B8-40A6761FBA91}
+		{0C244B18-CF6A-43E1-A98A-8A66609CF904} = {B034F436-A27E-4E76-91B8-40A6761FBA91}
+		{4F7E9A7F-A77E-41CD-9F5C-5BA65853D75E} = {B034F436-A27E-4E76-91B8-40A6761FBA91}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8BD40B0-0370-4BCD-8D2F-641730232DFF}
+	EndGlobalSection
+EndGlobal
