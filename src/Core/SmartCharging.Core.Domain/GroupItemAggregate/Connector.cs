@@ -6,14 +6,14 @@ namespace SmartCharging.Core.Domain.GroupItemAggregate;
 
 public class Connector : Entity<Guid>
 {
-    public int Identifier { get; private set; }
+    public ConnectorIdentifier Identifier { get; private set; }
     public CapacityInAmps MaxCurrentInAmps { get; private set; }
 
     internal static Connector Create(CreateConnectorCommand connectorCommand) =>
        new()
        {
            Id = Guid.NewGuid(),
-           Identifier = connectorCommand.Identifier,
+           Identifier = ConnectorIdentifier.Create(connectorCommand.Identifier),
            MaxCurrentInAmps = CapacityInAmps.Create(connectorCommand.MaxCurrentInAmps)
        };
 

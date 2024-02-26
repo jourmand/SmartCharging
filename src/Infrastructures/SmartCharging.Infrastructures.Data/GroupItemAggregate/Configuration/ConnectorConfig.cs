@@ -14,6 +14,13 @@ public class ConnectorConfig : IEntityTypeConfiguration<Connector>
         builder.Property(c => c.Id)
             .ValueGeneratedNever();
 
+        builder.OwnsOne(c => c.Identifier, d =>
+        {
+            d.Property(e => e.Value)
+            .IsRequired()
+            .HasColumnName("Identifier");
+        });
+
         builder.OwnsOne(c => c.MaxCurrentInAmps, d =>
         {
             d.Property(e => e.Value)

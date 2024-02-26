@@ -13,14 +13,10 @@ public class ConnectorIdentifier : Value<ConnectorIdentifier>
 
     public static ConnectorIdentifier Create(int value)
     {
-        if (value == 0) { }
-        if (value is > 30 or < -30)
-            throw new SmartChargingExceptions.InvalidEntityState($"Temperature cannot be more than plus 60 and less than minus 60 degrees");
+        if (value is < 1 or > 5)
+            throw new SmartChargingExceptions.InvalidEntityState($"Connector identifier should be between 1 and 5");
         return new ConnectorIdentifier(value);
     }
 
     public static implicit operator int(ConnectorIdentifier value) => value.Value;
-
-
 }
-
