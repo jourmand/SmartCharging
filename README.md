@@ -1,4 +1,4 @@
-# Project Overview (GreenFlux Smart Charging Assignment)
+# Project Overview
 
 Welcome to GreenFlux Smart Charging! This project is a well-structured and easily deployable solution designed to run seamlessly without any installation or dependency issues. Leveraging the power of Sqlite as its database and Docker Compose for containerization, it ensures a smooth deployment experience through Docker.
 
